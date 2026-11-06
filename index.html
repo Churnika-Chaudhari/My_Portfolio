@@ -8,22 +8,22 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='16' y='16' width='32' height='32' rx='7' fill='%23a758cc' transform='rotate(45 32 32)'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.454.0/dist/umd/lucide.min.js"></script>
 <script>document.documentElement.classList.add('js')</script>
 <style>
 /* ============ Tokens ============ */
 :root{
   --bg:#0C0912; --bg2:#110D1B; --surface:#161024;
   --line:rgba(240,236,250,.10); --line2:rgba(240,236,250,.055);
-  --text:#F5F2FB; --muted:#A79EC2;
+  --text:#F8F6FC; --muted:#B5ADCC;
   --purple:#a758cc; --magenta:#cc58c6; --indigo:#5a58cc; --indigo-b:#8b89ff; --cyan:#58cccc;
   --ease:cubic-bezier(.22,1,.36,1);
   --nav-acc:var(--purple);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px;scrollbar-color:#2b2340 var(--bg)}
-body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:17px;line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--cyan);color:#0C0912}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:#2b2340;border-radius:8px}
 img{display:block;max-width:100%;-webkit-user-drag:none}
@@ -62,7 +62,7 @@ body.lock{overflow:hidden}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;transition:padding .35s,background .35s,border-color .35s;border-bottom:1px solid transparent}
 .nav.scrolled{padding:13px 0;background:rgba(12,9,18,.82);backdrop-filter:blur(14px);border-color:var(--line2)}
 .nav-inner{display:flex;align-items:center;gap:34px}
-.brand{font-family:Syne,sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:.02em}
+.brand{font-family:Sora,sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:.02em}
 .brand b{color:var(--cyan);font-weight:800}
 .nav-links{display:flex;gap:28px;margin-left:auto}
 .nav-link{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--muted);position:relative;padding:6px 1px;transition:color .3s}
@@ -80,7 +80,6 @@ body.menu-open .burger span:last-child{transform:translateY(-4.5px) rotate(-45de
 .mobile-menu.open .mm-links a{opacity:1;transform:none;transition-delay:calc(var(--i)*70ms + .1s)}
 .mm-links a span{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc);font-weight:400}
 .mm-links a:hover{color:var(--acc)}
-.mm-foot{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px 26px;font-size:11px;letter-spacing:.12em;color:var(--muted)}
 .mm-foot a:hover{color:var(--cyan)}
 
 /* ============ Hero ============ */
@@ -136,7 +135,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4.5px) rotate(-45de
 .mq-track{display:inline-flex;align-items:center;white-space:nowrap;will-change:transform;animation:mq 30s linear infinite}
 .marquee:hover .mq-track{animation-play-state:paused}
 @keyframes mq{to{transform:translateX(-50%)}}
-.mq-unit{display:inline-flex;align-items:center;font-family:Syne,sans-serif;font-weight:700;font-size:clamp(1rem,1.9vw,1.3rem);letter-spacing:.06em;transition:color .3s}
+.mq-unit{display:inline-flex;align-items:center;font-family:Sora,sans-serif;font-weight:700;font-size:clamp(1rem,1.9vw,1.3rem);letter-spacing:.06em;transition:color .3s}
 .mq-unit:hover{color:var(--c)}
 .mq-dot{width:8px;height:8px;background:var(--c);transform:rotate(45deg);margin-inline:clamp(22px,3vw,42px);flex:none}
 
@@ -144,7 +143,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4.5px) rotate(-45de
 section{padding:130px 0}
 .sec-tag{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.22em;color:var(--acc);margin-bottom:20px}
 .sec-tag::before{content:"";width:36px;height:1px;background:var(--acc)}
-h2{font-family:Syne,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.06;letter-spacing:-.01em}
+h2{font-family:Sora,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.06;letter-spacing:-.01em}
 .mask{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
 .mask-in{display:inline-block;transform:translateY(115%);transition:transform .95s var(--ease) var(--d,0s)}
 h2.is-in .mask-in{transform:none}
@@ -203,10 +202,10 @@ h2.is-in .uline path{stroke-dashoffset:0}
 .slide-media{position:relative;aspect-ratio:16/9;overflow:hidden}
 .slide-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform .8s var(--ease),filter .5s}
 .slide-window:hover .slide-media img{transform:scale(1.045);filter:saturate(1)}
-.slide-idx{position:absolute;left:18px;bottom:6px;font-family:Syne,sans-serif;font-weight:800;font-size:56px;color:rgba(245,242,251,.9);line-height:1}
+.slide-idx{position:absolute;left:18px;bottom:6px;font-family:Sora,sans-serif;font-weight:800;font-size:56px;color:rgba(245,242,251,.9);line-height:1}
 .slide-content{padding:24px 24px 26px;display:flex;flex-direction:column;gap:14px;flex:1}
 .slide-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
-.slide-top h3{font-family:Syne,sans-serif;font-weight:700;font-size:1.4rem}
+.slide-top h3{font-family:Sora,sans-serif;font-weight:700;font-size:1.4rem}
 .slide-year{font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
 .slide-content>p{color:var(--muted);font-size:14.5px}
 .slide-tags{display:flex;flex-wrap:wrap;gap:8px}
@@ -259,7 +258,7 @@ a.c-item:hover,button.c-item:hover{padding-left:10px}
 .form-wrap.sent .form-ok{display:flex}
 .ok-ic{width:56px;height:56px;border-radius:50%;border:1px solid var(--acc);display:grid;place-items:center;color:var(--acc)}
 .ok-ic svg{width:24px;height:24px}
-.form-ok h4{font-family:Syne,sans-serif;font-size:1.5rem;text-transform:uppercase}
+.form-ok h4{font-family:Sora,sans-serif;font-size:1.5rem;text-transform:uppercase}
 .form-ok p{color:var(--muted)}
 
 /* ============ Footer ============ */
@@ -294,7 +293,7 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
 .modal-media img{width:100%;aspect-ratio:16/8;object-fit:cover}
 .modal-body{padding:34px 40px 40px}
 .m-meta{font-size:10.5px;letter-spacing:.2em;color:var(--muted);margin-bottom:12px}
-.modal-body h3{font-family:Syne,sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase}
+.modal-body h3{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase}
 .m-tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
 .modal-body p{color:var(--muted);margin-bottom:16px;font-size:15.5px}
 .modal-body p strong{color:var(--text);font-weight:600}
@@ -372,8 +371,8 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
   </nav>
   <div class="mm-foot mono">
     <!-- ✏️ EDIT: your email + social links -->
-    <a href="mailto:churnika.chaudhari@email.com">EMAIL ME</a>
-    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LINKEDIN</a>
+    <a href="mailto:churnika2005chaudhari@email.com">EMAIL ME</a>
+    <a href="https://www.linkedin.com/in/churnika-chaudhari-83a067244/" target="_blank" rel="noopener">LINKEDIN</a>
     <a href="https://github.com/" target="_blank" rel="noopener">GITHUB</a>
     <a href="https://www.figma.com/" target="_blank" rel="noopener">FIGMA</a>
   </div>
@@ -387,9 +386,9 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
 
       <!-- single-line name, full width -->
       <div class="hero-top">
-        <p class="hero-kicker mono" data-reveal><span class="pulse"></span>FOLIO / 2025 — AI-POWERED SOFTWARE DEVELOPER &amp; UI DESIGNER</p>
+        <p class="hero-kicker mono" data-reveal><span class="pulse"></span>FOLIO / 2026 — AI-POWERED SOFTWARE DEVELOPER &amp; UI DESIGNER</p>
         <h1 class="hero-name" aria-label="Churnika Chaudhari">
-          <span class="seg split" aria-hidden="true">CHURNIKA</span><span class="seg outline split" aria-hidden="true">CHAUDHARI</span>
+          <span class="seg split" aria-hidden="true">CHURNIKA</span><br><span class="seg outline split" aria-hidden="true">CHAUDHARI</span>
         </h1>
       </div>
 
@@ -449,7 +448,7 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
       <div class="car-head">
         <div>
           <p class="sec-tag mono" data-reveal>02 — SELECTED WORK</p>
-          <h2 class="mask"><span class="mask-in" data-reveal>FOUR WINDOWS,<br>ZERO FILLER<span style="color:var(--acc)">.</span></span></h2>
+          <h2 class="mask"><span class="mask-in" data-reveal>THREE WINDOWS,<br>ZERO FILLER<span style="color:var(--acc)">.</span></span></h2>
           <p class="car-hint mono" data-reveal style="--d:.15s">DRAG THE WINDOWS · ARROW KEYS WORK TOO</p>
         </div>
         <div class="car-ctrl" data-reveal style="--d:.2s">
@@ -482,13 +481,13 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
           <!-- ✏️ EDIT: your real email (shown here AND in the EMAIL constant in the script) -->
           <button class="c-item" id="emailRow" type="button" data-reveal>
             <span class="c-icon"><i data-lucide="mail"></i></span>
-            <span class="c-text"><span class="c-label mono">EMAIL — CLICK TO COPY</span><span class="c-val">churnika.chaudhari@email.com</span></span>
+            <span class="c-text"><span class="c-label mono">EMAIL — CLICK TO COPY</span><span class="c-val">churnika2005chaudhari@email.com</span></span>
             <span class="c-copy mono">COPY <i data-lucide="copy"></i></span>
           </button>
           <!-- ✏️ EDIT: your phone (text + the tel: link) -->
           <a class="c-item" href="tel:+919876543210" data-reveal style="--d:.08s">
             <span class="c-icon"><i data-lucide="phone"></i></span>
-            <span class="c-text"><span class="c-label mono">PHONE</span><span class="c-val">+91 98765 43210</span></span>
+            <span class="c-text"><span class="c-label mono">PHONE</span><span class="c-val">+91 7977318036</span></span>
           </a>
           <div class="c-item" data-reveal style="--d:.16s">
             <span class="c-icon"><i data-lucide="map-pin"></i></span>
@@ -497,46 +496,22 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
 
           <!-- ✏️ EDIT: add your usernames to these links -->
           <div class="socials" data-reveal style="--d:.24s">
-            <a class="soc" style="--c:var(--purple)" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
-            <a class="soc" style="--c:var(--cyan)" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-            <a class="soc" style="--c:var(--magenta)" href="https://www.figma.com/" target="_blank" rel="noopener" aria-label="Figma"><i data-lucide="figma"></i></a>
-            <a class="soc" style="--c:var(--indigo-b)" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a class="soc" style="--c:var(--purple)" href="https://github.com/Churnika-Chaudhari" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a class="soc" style="--c:var(--cyan)" href="https://www.linkedin.com/in/churnika-chaudhari-83a067244/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="soc" style="--c:var(--magenta)" href="https://www.figma.com/files/team/1267088915247386637/recents-and-sharing?fuid=1267088913276336916" target="_blank" rel="noopener" aria-label="Figma">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+            </a>
+          
           </div>
 
           <div class="avail mono" data-reveal style="--d:.3s"><span class="pulse"></span>OPEN TO WORK — AI-POWERED SOFTWARE DEVELOPER · INTERNSHIPS &amp; FULL-TIME</div>
         </div>
 
-        <div class="form-wrap" id="formWrap" data-reveal style="--d:.15s">
-          <form id="contactForm" novalidate>
-            <div class="field">
-              <label for="fName">YOUR NAME</label>
-              <input id="fName" type="text" autocomplete="name" placeholder="Jane Doe">
-              <span class="err"></span>
-            </div>
-            <div class="field">
-              <label for="fEmail">EMAIL ADDRESS</label>
-              <input id="fEmail" type="email" autocomplete="email" placeholder="jane@company.com">
-              <span class="err"></span>
-            </div>
-            <div class="field">
-              <label for="fMsg">ROLE OR PROJECT DETAILS</label>
-              <textarea id="fMsg" rows="4" placeholder="Role, project, timeline — tell me what you have in mind…"></textarea>
-              <span class="err"></span>
-            </div>
-            <button class="btn btn-accent" type="submit" id="sendBtn" data-magnet>
-              <span class="btn-label">Send message</span>
-              <span class="btn-ic"><i data-lucide="send"></i></span>
-              <span class="spin"></span>
-            </button>
-            <p class="form-note mono">NO SPAM — REPLIES WITHIN 24H</p>
-          </form>
-          <div class="form-ok">
-            <span class="ok-ic"><i data-lucide="check"></i></span>
-            <h4>Message sent</h4>
-            <p>Thanks for reaching out — I'll get back to you within 24 hours.</p>
-            <button class="btn btn-ghost btn-sm" id="againBtn" type="button">Send another</button>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -544,7 +519,7 @@ footer{border-top:1px solid var(--line2);padding:30px 0}
 
 <footer>
   <div class="wrap f-inner">
-    <span>© 2025 CHURNIKA CHAUDHARI</span>
+    <span>© 2026 CHURNIKA CHAUDHARI</span>
     <span>DESIGNED &amp; CODED BY CHURNIKA CHAUDHARI — NO TEMPLATES</span>
     <span>LOCAL TIME — <span id="clock">00:00:00</span></span>
   </div>
@@ -571,36 +546,38 @@ const $$ = (s, c=document) => [...c.querySelectorAll(s)];
 const PALETTE = ['#a758cc','#cc58c6','#8b89ff','#58cccc'];
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 /* ✏️ EDIT: your email (used by the copy-to-clipboard button) */
-const EMAIL = 'churnika.chaudhari@email.com';
+const EMAIL = 'churnika2005chaudhari@email.com';
 
 /* ✅ YOUR REAL PROJECTS — each "link" opens in a new tab from the case-study modal.
    To use your own screenshots later, just add  img:'your-image.jpg'  to a project. */
 const projects = [
   { title:'ExamBuddy', url:'AI STUDY APP', type:'AI APP', year:'2025', seed:'exambuddy-01', accent:'var(--cyan)',
     link:'https://lnkd.in/p/dugH72EB',
+    img:'img/exambuddy-img.png',
+    fit:'framed',
     stack:['Python','GenAI APIs','AI/ML'], role:'AI DEVELOPER',
-    desc:'An AI-powered application built for faster studying — it turns dense material into quick notes, practice questions and a smart revision flow.',
-    challenge:'Students lose hours re-reading entire textbooks before exams. ExamBuddy had to compress that into focused revision that adapts to each learner.',
-    outcome:'A working AI study companion: dense topics become crisp summaries and quizzes in seconds — so revision minutes beat re-reading hours.' },
+    desc:'An AI-powered application for faster studying — upload previous-year question papers and ExamBuddy analyzes them into high-frequency questions, AI study notes and practice quizzes.',
+    challenge:'Revision before exams is inefficient — students drown in past papers without knowing what actually matters. ExamBuddy had to find the signal in that noise.',
+    outcome:'A complete Analyze → Study → Practice loop: PYQs go in, targeted notes and quizzes come out — turning weeks of blind revision into focused sessions.' },
   { title:'Coca-Cola Ad Animation', url:'MOTION DESIGN', type:'ANIMATION', year:'2025', seed:'coke-ad-02', accent:'var(--magenta)',
     link:'https://lnkd.in/p/da5tcjXr',
+    img:'img/cocacola-img.png',
+    fit:'framed',
     stack:['Motion Graphics','2D Animation','Branding'], role:'ANIMATOR',
-    desc:'A short Coca-Cola advertisement animation — fizzing bubbles, bold brand red and motion that makes the bottle feel refreshing on screen.',
-    challenge:'Capturing an iconic brand in a few seconds of animation: the fizz, the red, the joy — all with smooth, satisfying motion.',
-    outcome:'A snappy brand ad with fluid animation and punchy timing — proof that motion design can make a product feel alive.' },
+    desc:'A Coca-Cola advertisement — Classic, Vanilla and Cherry cans staged on bold color-blocked sets, brought to life with fizzing bubbles and punchy motion.',
+    challenge:'Capturing an iconic brand in seconds: the fizz, the red, the joy — three flavors, three moods, one unmistakable identity.',
+    outcome:'A snappy animated ad where each flavor gets its own color world — proof that motion design can make a product feel alive.' },
   { title:'Sunglasses E-Commerce UI', url:'FIGMA PROTOTYPE', type:'UI DESIGN', year:'2025', seed:'shades-ui-03', accent:'var(--purple)',
     link:'https://www.figma.com/proto/2jYzf7JeIihxgxTBOiChV2/Projects?node-id=257-4&starting-point-node-id=257%3A4&t=gSH78yiSLtAQC3Ar-1',
-    stack:['Figma','Prototyping','E-Commerce'], role:'UI DESIGNER',
-    desc:'A clickable e-commerce concept for a sunglasses store — browsable catalogue, product detail and checkout, prototyped end-to-end in Figma.',
-    challenge:'Design a shopping flow that feels premium and effortless: big product imagery, clear hierarchy, and a prototype a client can actually click through.',
-    outcome:'A fully interactive Figma prototype covering the complete journey — from browsing shades to checkout.' },
-  { title:'This Portfolio', url:'HAND-CODED WEB', type:'WEB', year:'2025', seed:'folio-05', accent:'var(--indigo-b)',
-    link:'#contact', cta:'Start a project',
-    stack:['HTML','CSS','JavaScript'], role:'DESIGN + CODE',
-    desc:'The site you\u2019re reading right now — hand-coded from scratch, sliding browser-window carousel included, zero templates.',
-    challenge:'I wanted my portfolio to prove two things at once: that I can design a clean interface, and that I can build it myself, pixel by pixel.',
-    outcome:'You\u2019re looking at it — scrolling, sliding and all. Now go open the other windows, they\u2019re lonelier.' },
+    img:'img/sunglasses-img.png',
+    fit:'framed',
+    stack:['Figma','Prototyping','E-Commerce UX'], role:'UI DESIGNER',
+    desc:'A clickable e-commerce app for a sunglasses store — search, category filters, best sellers, featured frames and an AI styling assistant, prototyped end-to-end in Figma.',
+    challenge:'Design a shopping flow that feels premium and effortless — big product imagery, clear hierarchy, and an AI helper that suggests frames without getting in the way.',
+    outcome:'A fully interactive prototype covering the whole journey — browsing, wishlist, profile — with the AI assistant built right into the flow.' },
 ];
+
+
 
 /* ✏️ EDIT: your skills — ['name', level 0–100] */
 const skillGroups = [
@@ -663,7 +640,7 @@ function toast(msg, icon='check'){
 /* ================== Profile photo: tries common filenames, then placeholder ================== */
 (function(){
   const img = $('#profilePhoto'); if (!img) return;
-  const candidates = ['profile.jpg','profile.jpeg','profile.png','profile.webp','profile.JPG','profile.JPEG','profile.PNG','photo.jpg','me.jpg'];
+  const candidates = ['profile.jpg','img/profile.jpeg','profile.png','profile.webp','profile.JPG','profile.JPEG','profile.PNG','photo.jpg','me.jpg'];
   let i = 0;
   img.addEventListener('error', function onErr(){
     if (i >= candidates.length){
@@ -919,35 +896,6 @@ function closeModal(){
 }
 modal.addEventListener('click', e=>{ if (e.target.closest('[data-close]')) closeModal(); });
  $('#modalBody').addEventListener('click', e=>{ if (e.target.closest('a[href^="#"]')) closeModal(); });
-
-/* ================== Contact form ================== */
-(function(){
-  const form = $('#contactForm'), wrap = $('#formWrap'), btn = $('#sendBtn');
-  const setErr = (input, msg)=>{
-    const f = input.closest('.field');
-    f.classList.toggle('bad', !!msg);
-    f.querySelector('.err').textContent = msg || '';
-  };
-  ['fName','fEmail','fMsg'].forEach(id=> $('#'+id).addEventListener('input', e=> setErr(e.target, '')));
-  form.addEventListener('submit', e=>{
-    e.preventDefault();
-    const name = $('#fName'), email = $('#fEmail'), msg = $('#fMsg');
-    let ok = true;
-    if (!name.value.trim()){ setErr(name, 'PLEASE TELL ME YOUR NAME'); ok = false; }
-    if (!/^\S+@\S+\.\S+$/.test(email.value.trim())){ setErr(email, 'THAT EMAIL DOESN\u2019T LOOK RIGHT'); ok = false; }
-    if (!msg.value.trim()){ setErr(msg, 'A LINE OR TWO ABOUT THE PROJECT, PLEASE'); ok = false; }
-    if (!ok){ (form.querySelector('.field.bad input, .field.bad textarea')||name).focus(); return; }
-    btn.classList.add('loading'); btn.disabled = true;
-    setTimeout(()=>{
-      wrap.classList.add('sent');
-      toast('Message sent — I\u2019ll reply within 24h', 'send');
-    }, 1300);
-  });
-  $('#againBtn').addEventListener('click', ()=>{
-    form.reset(); wrap.classList.remove('sent');
-    btn.classList.remove('loading'); btn.disabled = false;
-  });
-})();
 
 /* copy email */
  $('#emailRow').addEventListener('click', async ()=>{
